@@ -185,15 +185,15 @@ Gain XP by:
 
 ---
 
-## 🖱 Building 
+### 🛠️ What This Does:
 
-# Install dependencies
-npm install
+- ✅ `npm install` → installs your dependencies from `package.json`
+- ✅ `npm run compile` → if you have a build step (like TypeScript), this compiles your code
+- ✅ `npx vsce package` → packages your extension into a `.vsix` file ready for install or publishing
 
-# Compile extension
-npm run compile
+If you don’t have a `compile` script, you can remove that line or add one in your `package.json`, like:
 
-# Package for distribution
-vsce package
-
-___
+```json
+"scripts": {
+  "compile": "tsc"  // if you're using TypeScript
+}
