@@ -223,8 +223,8 @@ We welcome contributions! Here's how you can help:
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/hajin-dev/tamagotchi-pets/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/hajin-dev/tamagotchi-pets/discussions)
+- **Issues**: [GitHub Issues](https://github.com/husky-699/tamagotchi-pets/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/hausky-699/tamagotchi-pets/discussions)
 - **Email**: ibtehaj252@gmail.com
 
 ## 🙏 Acknowledgments
