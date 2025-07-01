@@ -183,6 +183,8 @@ Gain XP by:
 ├── 📘 README.md               # This file
 └── 📄 LICENSE                 # MIT license
 
+---
+
 ## 🖱 Building 
 
 # Install dependencies
