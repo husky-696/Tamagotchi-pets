@@ -163,3 +163,101 @@ tamagotchi-pets/
 ├── package.json              # Extension manifest
 ├── README.md                 # This file
 └── LICENSE                   # MIT license
+```
+
+## 🧱 Building
+
+To build the extension locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Compile the extension
+npm run compile
+
+# Package the extension into a .vsix file
+npx vsce package
+```
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Report Bugs:** Open an issue with detailed reproduction steps  
+2. **Suggest Features:** Share your ideas for new pet types or features  
+3. **Submit PRs:** Fork the repo and submit pull requests  
+4. **Share Feedback:** Let us know how we can improve the experience  
+
+## 📝 Changelog
+
+### v2.0.0 - Major UI Overhaul
+- 🎨 Completely redesigned UI with dynamic animations  
+- 💃 Added dedicated dance button with sparkle effects  
+- 🍒 Renamed neon theme to "cherry" with improved styling  
+- 📱 Improved text field sizing and chat readability  
+- 🚀 Enhanced explorer view with bigger, more interactive pet  
+- ✨ Added fun mode with random encouraging messages  
+- 🎯 Better theme detection and contrast  
+- 💫 Smooth transitions and hover effects throughout  
+
+### v1.0.0 - Initial Release
+- 🐾 Virtual pet system with cat and raccoon types  
+- 🤖 AI-powered code assistance with multiple models  
+- 🎨 5 beautiful themes (auto, light, dark, neon, minimal)  
+- 💼 Dual panel experience (main + explorer views)  
+- ⚙️ Comprehensive settings panel  
+- 🎮 Easter eggs and interactive features  
+- 📊 Pet progression and leveling system  
+
+## 🆘 Troubleshooting
+
+### Pet Not Responding?
+- Check that your OpenRouter API key is set correctly  
+- Verify your internet connection  
+- Try refreshing the extension or restarting VS Code  
+
+### API Errors?
+- Ensure your API key is valid and starts with "sk-or-v1-"  
+- Check if you have remaining credits on OpenRouter  
+- Try switching to a different AI model  
+
+### Animations Not Working?
+- The extension uses GIF files that should load automatically  
+- Try refreshing the webview or restarting VS Code  
+- Check the developer console for any error messages  
+
+### Themes Look Wrong?
+- Try switching themes manually in settings  
+- Auto theme detection works best with standard VS Code themes  
+- Cherry theme is designed for dark environments  
+
+## 📞 Support & Contact
+
+- **GitHub Issues:** [GitHub Issues](https://github.com/husky-696/tamagotchi-pets/issues)  
+- **GitHub Discussions:** [GitHub Discussions](https://github.com/hausky-696/tamagotchi-pets/discussions)  
+- **Email:** ibtehaj252@gmail.com  
+- **Discord:** Hajin#2525  
+
+## 🙏 Acknowledgments
+
+- **OpenRouter** for providing free AI model access  
+- **VS Code Team** for the amazing extension API  
+- **Community** for feedback and feature suggestions  
+- **Open Source** projects that inspired this extension  
+
+---
+
+**Made with 💖 by Hajin for developers who believe coding should be fun!**
+
+## 🌟 What Makes This Special?
+
+This isn't just another VS Code extension — it's a companion that makes coding more enjoyable:
+
+- **Emotional Connection:** Your pet grows with you and celebrates your achievements  
+- **Productivity Boost:** Gentle reminders and encouragement keep you motivated  
+- **Stress Relief:** Interactive pet care provides quick mental breaks  
+- **Learning Aid:** AI assistance helps you learn and solve problems  
+- **Customizable:** Themes and settings adapt to your preferences  
+- **Fun Factor:** Dance mode, sparkles, and easter eggs add joy to coding  
+
+Join thousands of developers who've made coding more fun with their virtual pet companion! 🚀
