@@ -1,8 +1,8 @@
 # 🐾 Tamagotchi Pets - VS Code Extension
 
-Your adorable virtual pet companion that helps with coding, reviews code, and keeps you motivated while programming! Transform your coding experience with a cute pet that grows as you code.
+Your adorable virtual pet companion that helps you code, review, and stay motivated! Transform your workflow with a cute, growing sidekick.
 
-![Tamagotchi Pets Banner](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)
+![VS Code](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)
 ![Version](https://img.shields.io/badge/version-2.0.0-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
 
@@ -10,190 +10,156 @@ Your adorable virtual pet companion that helps with coding, reviews code, and ke
 
 ## 📚 Table of Contents
 
-- [✨ What's New in v2.0.0](#-whats-new-in-v200)
-- [✨ Core Features](#-core-features)
+- [✨ What's New](#-whats-new)
+- [🐾 Core Features](#-core-features)
 - [🚀 Quick Start](#-quick-start)
 - [📖 How to Use](#-how-to-use)
-- [🎯 Pet Progression System](#-pet-progression-system)
-- [⚙️ Configuration](#-configuration)
+- [🎯 Pet Progression](#-pet-progression)
+- [⚙️ Configuration](#️-configuration)
 - [🎮 Fun Features](#-fun-features)
 - [🔒 Privacy & Security](#-privacy--security)
 - [🛠️ Development](#-development)
 - [🤝 Contributing](#-contributing)
 - [📝 Changelog](#-changelog)
 - [🆘 Troubleshooting](#-troubleshooting)
-- [📞 Support](#-support)
+- [📞 Support & Contact](#-support--contact)
 - [🙏 Acknowledgments](#-acknowledgments)
 - [🌟 What Makes This Special?](#-what-makes-this-special)
 
 ---
 
-## ✨ What's New in v2.0.0
+## ✨ What's New
 
-### 🎨 Completely Redesigned UI
-- Dynamic animations, hover effects, and smooth transitions
-- Better contrast and readability
-- New Cherry theme (renamed from Neon)
-- Compact, elegant chat and input fields
+### v2.0.0 - Major UI Overhaul
 
-### 💃 New Dance Feature
-- Dedicated dance button
-- Fun sparkle animations and cooldown system
-
-### 🚀 Enhanced Experience
-- Bigger, more interactive pet in Explorer
-- Fun Mode: Encouraging messages and tips
-- Smoother transitions and better performance
+- 🎨 Redesigned interface with smoother animations
+- 💃 Dance button with sparkles and cooldown
+- 🍒 Neon theme renamed to "Cherry" and improved
+- 📱 Better chat readability & compact input styling
+- 🚀 Explorer view upgraded with larger pet panel
+- ✨ Fun mode with random encouraging messages
+- ⚙️ Improved performance and responsiveness
 
 ---
 
-## ✨ Core Features
+## 🐾 Core Features
 
-### 🐾 Virtual Pet Companion
-- Animated cat 🐱 or raccoon 🦝
-- Pet levels up as you code
-- Interact via patting, feeding, and dancing
-- Mood system that reacts to your behavior
-
-### 🤖 AI-Powered Code Assistant
-- Ask coding questions using AI chat
-- Choose from DeepSeek, Gemini, Llama, Phi-3
-- Remembers chat context
-- Word limit customization
-
-### 🎨 Beautiful Themes
-- Auto: Follows your VS Code theme
-- Light, Dark, Cherry 🌸, and Minimal
-
-### 💼 Productivity Tools
-- Dual panel (Activity Bar + Explorer)
-- Git shortcuts
-- Save reminders
-- Motivational messages
-- Hide/show buttons and customize UI
+- 🐱 **Pet Companion**: Animated cat or raccoon with moods and levels
+- 📈 **Progression**: Earn XP through interaction and AI use
+- 🤖 **AI Assistant**: Powered by OpenRouter (DeepSeek, Gemini, Llama, Phi-3)
+- 🎨 **Themes**: Auto, Light, Dark, Cherry, Minimal
+- 🛠️ **Productivity**: Save reminders, git shortcuts, dual panel view
+- 💬 **Chat Panel**: Ask questions and get answers from AI
+- 💖 **Care Buttons**: Pat, feed, and dance with your pet
 
 ---
 
 ## 🚀 Quick Start
 
 ### Installation
-1. Download or clone this repo
-2. Move it into your `.vscode/extensions` folder
+
+1. Download or clone this repository
+2. Move the folder into `.vscode/extensions/`
 3. Restart VS Code
-4. Click the 🐾 icon to start!
+4. Look for the 🐾 icon in the Activity Bar
 
 ### Setup
-1. Get an API key from [OpenRouter.ai](https://openrouter.ai)
-2. Click ⚙️ in the pet panel
-3. Paste your API key
-4. Choose your pet and theme
-5. Start coding!
+
+1. Visit [OpenRouter.ai](https://openrouter.ai) to get a free API key
+2. Open the pet panel, click ⚙️
+3. Paste your API key and choose your pet and theme
+4. Start coding and interacting!
 
 ---
 
 ## 📖 How to Use
 
-### Dual Panel Experience
-- 🐾 Activity Bar = Full view
-- Explorer = Quick view (now bigger)
+### Panels
 
-### Pet Interactions
-- 💖 Pat = XP & heart reaction (10s cooldown)
-- 🍎 Feed = Happy pet! (15s cooldown)
-- 💃 Dance = Fun animation & sparkles (20s cooldown)
-- 💤 Wake Up = Click to interact when asleep
+- **Activity Bar Panel**: Full-screen experience
+- **Explorer Sidebar Panel**: Compact pet view
 
-### AI Chat
-- Ask code questions
-- Enjoy context-aware responses
-- Try Easter eggs: “meow”, “nya”, “coffee”
+### Pet Actions
 
-### Customization
-- ⚙️ Settings panel
-- Pick themes and pet type
-- Toggle button visibility
+- 💖 Pat (10s cooldown)
+- 🍎 Feed (15s cooldown)
+- 💃 Dance (20s cooldown + sparkles!)
+- 💤 Wake up sleeping pet
+
+### Chat Features
+
+- Ask questions with AI
+- Type "meow", "nya", or "coffee" for Easter eggs
+- Customize word limit and AI model
 
 ---
 
-## 🎯 Pet Progression System
+## 🎯 Pet Progression
 
-Gain XP by:
-- Using AI features (+8 XP)
-- Patting (+5 XP)
-- Feeding (+8 XP)
-- Dancing (+20 XP)
-- Initial setup (+10 XP)
-- Random fun (+5 XP)
+Earn XP by:
+- 🧠 Using AI chat (+8 XP)
+- 💖 Patting (+5 XP)
+- 🍎 Feeding (+8 XP)
+- 💃 Dancing (+20 XP)
+- 🔧 Setup completion (+10 XP)
+- 🎉 Random interactions (+5 XP)
 
-📈 Level up to unlock new interactions!
+Your pet levels up and unlocks new reactions!
 
 ---
 
 ## ⚙️ Configuration
 
 ### Settings
-- **API Key**: OpenRouter key
-- **AI Model**: DeepSeek, Gemini, Llama, Phi-3
-- **Theme**: Auto, Light, Dark, Cherry, Minimal
-- **Pet Type**: Cat 🐱 or Raccoon 🦝
-- **Word Limit**: 50–400 words
-- **Reminders**: Enable/disable auto-save tips
-- **Buttons**: Choose which features are visible
+
+- 🔑 API Key: From OpenRouter
+- 🧠 AI Model: DeepSeek, Gemini, Llama, Phi-3
+- 🎨 Theme: Auto, Light, Dark, Cherry, Minimal
+- 🐾 Pet Type: Cat or Raccoon
+- 📏 Word Limit: 50–400 words
+- 💾 Save Reminders: Enable/disable
+- 🔘 Toggle buttons: Show/hide action buttons
 
 ### Supported AI Models
-- 🧠 DeepSeek R1 *(Free)*
-- 💬 DeepSeek Chat
-- ⚡ Gemini Flash 1.5
-- 🦙 Llama 3.1 8B *(Free)*
-- 🌱 Phi-3 Mini *(Free)*
+
+- **DeepSeek R1** *(Free)*
+- **DeepSeek Chat**
+- **Gemini Flash 1.5**
+- **Llama 3.1 8B** *(Free)*
+- **Phi-3 Mini** *(Free)*
 
 ---
 
 ## 🎮 Fun Features
 
-- Type “meow”, “nya”, or “coffee” in chat for surprises
-- Sparkle effects during dance mode
-- Random motivational quotes
-- Pet reacts to time and mood
+- 🐱 Easter eggs: "meow", "nya", "coffee"
+- ✨ Dance mode: Sparkles and animations
+- 🧠 Random motivational messages
+- 🕒 Mood changes over time
 
 ---
 
 ## 🔒 Privacy & Security
 
-- Your API key is stored securely in settings
-- Code is only sent when using AI
-- No tracking or data collection
-- All processing is local or via your AI provider
+- 🔐 API key stored securely in local settings
+- 🧠 Code is only sent when using AI features
+- 🛑 No background tracking or analytics
+- 🧩 Processing happens locally or through selected model
 
 ---
 
 ## 🛠️ Development
 
-### 🗂️ Project Structure
+### 🗂 Project Structure
 
 ```text
-📦 tamagotchi-pets/
-├── 📁 src/
-│   └── extension.js           # Main extension logic
-├── 📁 media/
+tamagotchi-pets/
+├── src/
+│   └── extension.js          # Main extension logic
+├── media/
 │   ├── icon.png              # Extension icon
 │   ├── cat-*.gif             # Cat animations
 │   └── raccoon-*.gif         # Raccoon animations
-├── 📄 package.json            # Extension manifest
-├── 📘 README.md               # This file
-└── 📄 LICENSE                 # MIT license
-
----
-
-### 🛠️ What This Does:
-
-- ✅ `npm install` → installs your dependencies from `package.json`
-- ✅ `npm run compile` → if you have a build step (like TypeScript), this compiles your code
-- ✅ `npx vsce package` → packages your extension into a `.vsix` file ready for install or publishing
-
-If you don’t have a `compile` script, you can remove that line or add one in your `package.json`, like:
-
-```json
-"scripts": {
-  "compile": "tsc"  // if you're using TypeScript
-}
+├── package.json              # Extension manifest
+├── README.md                 # This file
+└── LICENSE                   # MIT license
