@@ -15,7 +15,7 @@ Your adorable virtual pet companion that helps you code, review, and stay motiva
 - [🚀 Quick Start](#-quick-start)
 - [📖 How to Use](#-how-to-use)
 - [🎯 Pet Progression](#-pet-progression)
-- [⚙️ Configuration](#️-configuration)
+- [⚙️ Configuration](#-configuration)
 - [🎮 Fun Features](#-fun-features)
 - [🔒 Privacy & Security](#-privacy--security)
 - [🛠️ Development](#-development)
