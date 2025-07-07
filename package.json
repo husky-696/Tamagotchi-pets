@@ -1,82 +1,152 @@
 {
   "name": "tamagotchi-pets",
-  "displayName": "🐾 Tamagotchi Pets - Virtual Coding Companion",
-  "description": "Your adorable virtual pet that helps with coding, saves files, commits code, and keeps you motivated! Features AI assistance, multiple themes, dance mode, and interactive pet care with dynamic animations.",
-  "version": "2.0.0",
-  "publisher": "hajin-dev",
-  "author": {
-    "name": "Hajin",
-    "email": "mibtehaj599@gmail.com",
-    "url": "https://github.com/hajin-dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hajin-dev/tamagotchi-pets.git"
-  },
-  "homepage": "https://github.com/hajin-dev/tamagotchi-pets#readme",
-  "bugs": {
-    "url": "https://github.com/hajin-dev/tamagotchi-pets/issues"
-  },
-  "license": "MIT",
+  "displayName": "Tamagotchi Pets",
+  "description": "AI-powered virtual pet companion for VS Code - helps with coding, saves files, commits code, and keeps you motivated!",
+  "version": "2.1.0",
+  "publisher": "tamagotchi-pets",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.74.0"
   },
-  "categories": ["Other", "Machine Learning", "Education", "Snippets", "Themes" ],
+  "categories": ["Other", "Machine Learning", "Education"],
   "keywords": [
     "ai",
     "assistant",
     "pet",
-    "tamagotchi",
-    "virtual pet",
-    "cute",
-    "kawaii",
+    "companion",
     "productivity",
     "motivation",
-    "deepseek",
-    "openrouter",
-    "companion",
-    "cat",
-    "raccoon",
-    "animation",
-    "interactive",
-    "fun",
-    "coding buddy",
-    "developer tools",
-    "themes",
-    "customizable",
-    "git",
-    "save files",
-    "dance",
-    "dynamic",
-    "cherry theme",
-    "coding companion",
-    "pet care",
-    "level up",
-    "experience points",
-    "mood system",
-    "sparkles",
-    "hearts",
-    "chat",
-    "ai chat",
-    "code help",
-    "programming assistant",
-    "scrollable",
-    "ui",
-    "usability"
+    "coding",
+    "helper",
+    "tamagotchi",
+    "virtual pet"
   ],
-  "icon": "media/icon.png",
-  "galleryBanner": {
-    "color": "#FF69B4",
-    "theme": "light"
-  },
   "activationEvents": ["onStartupFinished"],
   "main": "./src/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "Tamagotchi Pets",
+      "properties": {
+        "tamagotchiPets.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenRouter API key for AI features"
+        },
+        "tamagotchiPets.model": {
+          "type": "string",
+          "default": "deepseek/deepseek-r1:free",
+          "enum": [
+            "deepseek/deepseek-r1:free",
+            "deepseek/deepseek-chat",
+            "google/gemini-flash-1.5",
+            "meta-llama/llama-3.1-8b-instruct:free",
+            "microsoft/phi-3-mini-128k-instruct:free"
+          ],
+          "description": "AI model to use for responses"
+        },
+        "tamagotchiPets.theme": {
+          "type": "string",
+          "default": "dark",
+          "enum": ["light", "dark", "cherry", "hacker", "cozy"],
+          "description": "Visual theme for the pet interface"
+        },
+        "tamagotchiPets.petType": {
+          "type": "string",
+          "default": "cat",
+          "enum": ["cat", "raccoon"],
+          "description": "Type of virtual pet"
+        },
+        "tamagotchiPets.wordLimit": {
+          "type": "number",
+          "default": 150,
+          "minimum": 0,
+          "maximum": 400,
+          "description": "Maximum words in AI responses (0 = unlimited)"
+        },
+        "tamagotchiPets.enableGitReminders": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable periodic git commit reminders"
+        },
+        "tamagotchiPets.enableSaveReminders": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable unsaved file reminders"
+        },
+        "tamagotchiPets.showUtilityButtons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show utility buttons (API Key, Clear Chat)"
+        },
+        "tamagotchiPets.showSaveButton": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Save Files button"
+        },
+        "tamagotchiPets.showGitButton": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Git Commit button"
+        },
+        "tamagotchiPets.background": {
+          "type": "string",
+          "default": "none",
+          "enum": ["none", "forest", "city", "sofa"],
+          "description": "Background image for the pet"
+        },
+        "tamagotchiPets.showInExplorer": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show pet in Explorer sidebar"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "tamagotchi-pets.setApiKey",
+        "title": "Set API Key",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.openSettings",
+        "title": "Open Settings",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.showPet",
+        "title": "Show Pet Panel",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.feedPet",
+        "title": "Feed Pet",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.patPet",
+        "title": "Pat Pet",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.saveFiles",
+        "title": "Save All Files",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.gitCommit",
+        "title": "Git Commit",
+        "category": "Tamagotchi Pets"
+      },
+      {
+        "command": "tamagotchi-pets.showAchievements",
+        "title": "Show Achievements",
+        "category": "Tamagotchi Pets"
+      }
+    ],
     "viewsContainers": {
       "activitybar": [
         {
           "id": "tamagotchi-pets-container",
-          "title": "🐾 Tamagotchi Pets",
+          "title": "Tamagotchi Pets",
           "icon": "$(heart)"
         }
       ]
@@ -86,65 +156,19 @@
         {
           "type": "webview",
           "id": "tamagotchi-pets-main",
-          "name": "🐾 My Pet Companion",
-          "when": "true",
-          "icon": "$(heart)"
+          "name": "Pet Companion",
+          "when": "true"
         }
       ],
       "explorer": [
         {
           "type": "webview",
           "id": "tamagotchi-pets-explorer",
-          "name": "🐾 Pet Buddy",
-          "when": "true",
-          "icon": "$(heart)"
+          "name": "Pet",
+          "when": "config.tamagotchiPets.showInExplorer"
         }
       ]
     },
-    "commands": [
-      {
-        "command": "tamagotchi-pets.setApiKey",
-        "title": "🔑 Set OpenRouter API Key",
-        "category": "Tamagotchi Pets",
-        "icon": "$(key)"
-      },
-      {
-        "command": "tamagotchi-pets.openSettings",
-        "title": "⚙️ Open Pet Settings",
-        "category": "Tamagotchi Pets",
-        "icon": "$(settings-gear)"
-      },
-      {
-        "command": "tamagotchi-pets.showPet",
-        "title": "🐾 Show Pet Panel",
-        "category": "Tamagotchi Pets",
-        "icon": "$(heart)"
-      },
-      {
-        "command": "tamagotchi-pets.feedPet",
-        "title": "🍎 Feed Your Pet",
-        "category": "Tamagotchi Pets",
-        "icon": "$(heart)"
-      },
-      {
-        "command": "tamagotchi-pets.patPet",
-        "title": "💖 Pat Your Pet",
-        "category": "Tamagotchi Pets",
-        "icon": "$(heart)"
-      },
-      {
-        "command": "tamagotchi-pets.saveFiles",
-        "title": "💾 Save All Files",
-        "category": "Tamagotchi Pets",
-        "icon": "$(save-all)"
-      },
-      {
-        "command": "tamagotchi-pets.gitCommit",
-        "title": "📝 Git Commit",
-        "category": "Tamagotchi Pets",
-        "icon": "$(git-commit)"
-      }
-    ],
     "menus": {
       "commandPalette": [
         {
@@ -167,116 +191,38 @@
         },
         {
           "command": "tamagotchi-pets.gitCommit"
-        }
-      ],
-      "view/title": [
+        },
         {
-          "command": "tamagotchi-pets.openSettings",
-          "when": "view == tamagotchi-pets-main",
-          "group": "navigation",
-          "icon": "$(settings-gear)"
+          "command": "tamagotchi-pets.showAchievements"
         }
       ]
-    },
-    "configuration": {
-      "title": "🐾 Tamagotchi Pets",
-      "properties": {
-        "tamagotchiPets.apiKey": {
-          "type": "string",
-          "default": "",
-          "description": "OpenRouter API Key for AI features (get free credits at openrouter.ai)",
-          "markdownDescription": "Your OpenRouter API Key for AI features. Get free credits at [openrouter.ai](https://openrouter.ai)"
-        },
-        "tamagotchiPets.model": {
-          "type": "string",
-          "default": "deepseek/deepseek-r1:free",
-          "description": "AI model to use for assistance",
-          "enum": [
-            "deepseek/deepseek-r1:free",
-            "deepseek/deepseek-chat",
-            "google/gemini-flash-1.5",
-            "meta-llama/llama-3.1-8b-instruct:free",
-            "microsoft/phi-3-mini-128k-instruct:free"
-          ],
-          "enumDescriptions": [
-            "DeepSeek R1 (Free) - Latest reasoning model",
-            "DeepSeek Chat - Great for conversations",
-            "Gemini Flash 1.5 - Fast and efficient",
-            "Llama 3.1 8B (Free) - Open source alternative",
-            "Phi-3 Mini (Free) - Lightweight option"
-          ]
-        },
-        "tamagotchiPets.wordLimit": {
-          "type": "number",
-          "default": 150,
-          "minimum": 50,
-          "maximum": 400,
-          "description": "Maximum words in AI responses (50-400)"
-        },
-        "tamagotchiPets.theme": {
-          "type": "string",
-          "default": "auto",
-          "description": "Visual theme for your pet interface",
-          "enum": ["auto", "light", "dark", "cherry", "minimal"],
-          "enumDescriptions": [
-            "Auto - Follow VS Code theme",
-            "Light - Clean and bright",
-            "Dark - Easy on the eyes",
-            "Cherry - Vibrant pink cyberpunk",
-            "Minimal - Clean and simple"
-          ]
-        },
-        "tamagotchiPets.petType": {
-          "type": "string",
-          "default": "cat",
-          "description": "Type of virtual pet companion",
-          "enum": ["cat", "raccoon"],
-          "enumDescriptions": ["Cat - Classic feline companion", "Raccoon - Mischievous masked friend"]
-        },
-        "tamagotchiPets.enablePetBackground": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enable background.png from media folder behind pet"
-        },
-        "tamagotchiPets.enableGitReminders": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enable periodic git commit/push reminders"
-        },
-        "tamagotchiPets.enableSaveReminders": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enable periodic reminders to save unsaved files"
-        },
-        "tamagotchiPets.showUtilityButtons": {
-          "type": "boolean",
-          "default": true,
-          "description": "Show utility buttons (API Key, Clear Chat) in main panel"
-        },
-        "tamagotchiPets.showSaveButton": {
-          "type": "boolean",
-          "default": true,
-          "description": "Show Save Files button in main panel"
-        },
-        "tamagotchiPets.showGitButton": {
-          "type": "boolean",
-          "default": true,
-          "description": "Show Git Commit button in main panel"
-        }
-      }
     }
   },
   "scripts": {
-    "vscode:prepublish": "echo 'No compilation needed for JavaScript extension'",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
     "package": "vsce package",
     "publish": "vsce publish"
   },
-  "extensionDependencies": [],
-  "badges": [
-    {
-      "url": "https://img.shields.io/badge/Made%20with-❤️-red",
-      "href": "https://github.com/hajin-dev/tamagotchi-pets",
-      "description": "Made with love"
-    }
-  ]
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4",
+    "@vscode/test-electron": "^2.2.0",
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hajin-dev/tamagotchi-pets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hajin-dev/tamagotchi-pets/issues"
+  },
+  "homepage": "https://github.com/hajin-dev/tamagotchi-pets#readme",
+  "license": "MIT",
+  "icon": "media/icon.png"
 }

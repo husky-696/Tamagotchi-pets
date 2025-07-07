@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Hajin - Tamagotchi Pets VS Code Extension
+Copyright (c) 2024 hajin_oni (hajinisdev@gmail.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,16 +22,48 @@ SOFTWARE.
 
 ---
 
-🐾 Tamagotchi Pets - Your Virtual Coding Companion
+## Third-Party Licenses
 
-This extension brings joy and productivity to your coding experience through
-an adorable virtual pet that grows with you as you code. Created with love
-for developers who believe programming should be both productive and fun.
+This project may include third-party software components with their own licenses:
 
-Special thanks to:
-- The VS Code team for the excellent extension API
-- OpenRouter for providing accessible AI model APIs  
-- The open source community for inspiration and support
-- All developers who make coding a creative and joyful experience
+### OpenRouter API
+- Used for AI functionality
+- Subject to OpenRouter's terms of service
+- https://openrouter.ai/terms
 
-Happy coding with your new pet companion! ✨
+### VS Code Extension API
+- Microsoft Visual Studio Code Extension API
+- Subject to Microsoft's terms
+- https://code.visualstudio.com/api
+
+### Node.js Dependencies
+Various npm packages used in development, each with their own licenses.
+See package.json for complete list of dependencies.
+
+---
+
+## Attribution
+
+### Inspiration
+This project was inspired by the classic Tamagotchi virtual pets and modern AI coding assistants.
+
+### Icons and Assets
+- Pet animations: Custom created for this project
+- VS Code icons: From VS Code's built-in icon library
+- Emoji: Standard Unicode emoji characters
+
+### Special Thanks
+- VS Code team for the excellent extension platform
+- OpenRouter for accessible AI APIs
+- The developer community for feedback and suggestions
+
+---
+
+## Contact
+
+**Author**: hajin_oni
+**Email**: hajinisdev@gmail.com
+**GitHub**: https://github.com/husky-696
+**Discord**: hajin_oni
+
+For questions about licensing or commercial use, please contact the author.

@@ -1,254 +1,139 @@
-# 🐾 Tamagotchi Pets - VS Code Extension
+# 🐾 Tamagotchi Pets - Your Coding Companion
 
-Your adorable virtual pet companion that helps with coding, reviews code, and keeps you motivated while programming! Transform your coding experience with a cute pet that grows as you code.
+**Version 2.1.1** - A delightful virtual pet that lives in your VS Code! Feed, play, and chat with your AI-powered coding companion.
 
-![Tamagotchi Pets Banner](https://img.shields.io/badge/VS%20Code-Extension-blue?style=for-the-badge&logo=visual-studio-code)
-![Version](https://img.shields.io/badge/version-2.0.0-green?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+## ✨ Features
 
-## ✨ What's New in v2.0.0
+### 🤖 AI-Powered Chat Companion
+- **Smart Conversations**: Chat with your pet using advanced AI models (DeepSeek R1, Gemini Flash, Llama 3.1)
+- **Coding Help**: Get assistance with programming questions, debugging, and best practices
+- **Customizable Responses**: Set word limits from 0 (unlimited) to 200 words, or let your pet give comprehensive answers
+- **Context Awareness**: Your pet remembers your conversation for more meaningful interactions
 
-### 🎨 **Completely Redesigned UI**
-- **Dynamic Animations**: Smooth transitions, hover effects, and interactive elements
-- **Better Themes**: Redesigned all themes with better contrast and readability
-- **Cherry Theme**: New vibrant pink cyberpunk theme (renamed from neon)
-- **Improved Chat**: Better readability, contrast, and typography
-- **Compact Text Fields**: Smaller, more elegant input areas
+### 🐾 Interactive Virtual Pet
+- **Multiple Pet Types**: Choose between adorable cats 🐱 or mischievous raccoons 🦝
+- **Rich Animations**: Watch your pet idle, think, celebrate, dance, eat, and sleep
+- **Mood System**: Your pet's mood changes naturally - content, happy, playful, curious, focused, and more
+- **Smart Sleep Cycle**: Your pet will nap when you're inactive and wake up when you return
 
-### 💃 **New Dance Feature**
-- **Dance Button**: Dedicated dance button for instant fun
-- **Dance GIF**: Uses single dance animation for consistent experience
-- **Sparkle Effects**: Enhanced visual effects during dance mode
-- **Cooldown System**: Prevents spam with smart timing
+### 🎨 Beautiful Themes & Customization
+- **6 Stunning Themes**: Hacker (Matrix green), Cozy (warm browns), Light, Dark, Cherry (pink/purple), Minimal
+- **Background Environments**: None, Forest, City, or Cozy Sofa settings
+- **Aesthetic Scrollbars**: Themed, semi-transparent scrollbars that match your chosen style
+- **Dual View Support**: Main chat panel + compact explorer sidebar view
 
-### 🚀 **Enhanced Experience**
-- **Dynamic Explorer View**: Bigger, more interactive pet in sidebar
-- **Fun Mode**: Random encouraging messages and tips
-- **Better Animations**: Smoother transitions and effects
-- **Improved Performance**: Optimized code for better responsiveness
+### 🏆 Achievement System
+- **20+ Achievements**: Unlock rewards for coding milestones, pet interactions, and special moments
+- **Level Progression**: Your pet gains XP and levels up as you code and interact
+- **Progress Tracking**: Visual progress bars and achievement galleries
 
-## ✨ Core Features
+### 💡 Productivity Features
+- **Coding Tips**: Receive helpful VS Code shortcuts and productivity tips
+- **File Management**: Quick save all files with celebration effects
+- **Git Integration**: Easy commit functionality with encouraging messages
+- **Smart Reminders**: Optional git commit and unsaved file notifications
+- **Activity Tracking**: Monitors your coding patterns and celebrates successes
 
-### 🐾 Virtual Pet Companion
-- **Animated Pet**: Watch your pet sleep, wake up, work, dance, and celebrate with you
-- **Pet Progression**: Level up your pet by coding and using AI features
-- **Multiple Pet Types**: Choose between Cat 🐱 and Raccoon 🦝 companions
-- **Interactive Care**: Pat, feed, and dance with your pet for heart reactions and bonuses
-- **Mood System**: Your pet's mood changes based on interactions and activity
-
-### 🤖 AI-Powered Code Assistant
-- **Smart Chat**: Ask coding questions with AI-powered responses
-- **Multiple AI Models**: Choose from DeepSeek, Gemini, Llama, and Phi-3
-- **Context Awareness**: Remembers conversation history for better responses
-- **Word Limit Control**: Customizable response length (50-400 words)
-
-### 🎨 Beautiful Themes
-- **Auto Theme**: Automatically follows your VS Code theme
-- **Light Theme**: Clean and bright for daytime coding
-- **Dark Theme**: Easy on the eyes for night coding with green accents
-- **Cherry Theme**: Vibrant pink cyberpunk aesthetics with glow effects
-- **Minimal Theme**: Clean and distraction-free design
-
-### 💼 Productivity Features
-- **Dual View Experience**: Full panel in activity bar + compact view in Explorer
-- **Save Reminders**: Automatic notifications for unsaved work
-- **Git Integration**: Quick access to git operations
-- **Motivational Messages**: Periodic encouragement and health reminders
-- **Customizable Interface**: Hide/show buttons based on your preferences
+### 🎉 Fun & Engaging
+- **Interactive Actions**: Pat (💖), Feed (🍎), and Dance (💃) with cooldown timers
+- **Visual Effects**: Hearts, sparkles, and confetti animations
+- **Easter Eggs**: Special responses to keywords like "meow" and "coffee"
+- **Encouraging Messages**: Time-based greetings and motivational messages
+- **Random Fun**: Spontaneous interactions and breakthrough moments
 
 ## 🚀 Quick Start
 
-### Installation
-1. Download the extension files
-2. Place them in your VS Code extensions folder
-3. Restart VS Code
-4. Look for the 🐾 icon in the activity bar
-
-### Setup
-1. **Get API Key**: Visit [OpenRouter.ai](https://openrouter.ai) for free AI credits
-2. **Configure**: Click the ⚙️ settings button in the pet panel
-3. **Add API Key**: Paste your OpenRouter API key
-4. **Choose Pet**: Select your preferred pet type and theme
-5. **Start Coding**: Your pet is ready to help!
-
-## 📖 How to Use
-
-### Dual Panel Experience
-- **Main Panel**: Click the 🐾 icon in the activity bar for the full experience
-- **Explorer Panel**: Quick pet view in the Explorer sidebar
-- **Dynamic Sizing**: Explorer view is now bigger and more interactive
-
-### Pet Interaction
-- **Wake Up**: Click on your sleeping pet to wake them up
-- **Pat Pet**: Click 💖 Pat for heart animations and XP (10s cooldown)
-- **Feed Pet**: Click 🍎 Feed to make your pet happy (15s cooldown)
-- **Dance**: Click 💃 Dance for sparkle effects and fun (20s cooldown)
-- **Watch Growth**: Your pet levels up as you use the extension
-
-### AI Features
-- **Chat**: Type questions in the chat box for AI assistance
-- **Smart Responses**: AI remembers context for better conversations
-- **Easter Eggs**: Try typing "meow", "nya", or "coffee" for special responses
-
-### Customization
-- **Settings Panel**: Click ⚙️ for comprehensive settings
-- **Theme Selection**: Choose from 5 beautiful themes
-- **Button Visibility**: Hide/show utility and code action buttons
-- **Pet Type**: Switch between cat and raccoon companions
-
-## 🎯 Pet Progression System
-
-Your pet gains experience (XP) through:
-- Using AI features (+8 XP)
-- Getting patted (+5 XP)
-- Being fed (+8 XP)
-- Dancing (+20 XP)
-- Setting up the extension (+10 XP)
-- Random fun interactions (+5 XP)
-
-**Level up your pet to unlock achievements and special interactions!**
+1. **Install the Extension**: Search for "Tamagotchi Pets" in VS Code Extensions
+2. **Get API Key**: Visit [openrouter.ai](https://openrouter.ai) for free AI credits
+3. **Open Settings**: Click the ⚙️ button in the pet panel
+4. **Add API Key**: Paste your OpenRouter API key
+5. **Start Chatting**: Ask your pet anything! Try "Hello!" or "Help me with JavaScript"
 
 ## ⚙️ Configuration
 
-### Available Settings
-- **API Key**: Your OpenRouter API key for AI features
-- **AI Model**: Choose your preferred AI model
-- **Theme**: Select visual theme (auto, light, dark, cherry, minimal)
-- **Pet Type**: Choose between cat and raccoon
-- **Word Limit**: Control AI response length (50-400 words)
-- **Auto-Save Reminders**: Toggle save notifications
-- **Button Visibility**: Customize which buttons to show
+### AI Settings
+- **API Key**: Your OpenRouter API key for AI conversations
+- **Model Selection**: Choose from DeepSeek R1 (free), Gemini Flash, Llama 3.1, and more
+- **Word Limit**: Set response length (0 = unlimited, 30-200 words)
 
-### Supported AI Models
-- **DeepSeek R1** (Free) - Latest reasoning model
-- **DeepSeek Chat** - Great for conversations
-- **Gemini Flash 1.5** - Fast and efficient
-- **Llama 3.1 8B** (Free) - Open source alternative
-- **Phi-3 Mini** (Free) - Lightweight option
+### Appearance
+- **Themes**: Hacker, Cozy, Light, Dark, Cherry, Minimal
+- **Pet Type**: Cat or Raccoon companions
+- **Background**: None, Forest, City, or Cozy Sofa environments
 
-## 🎮 Fun Features
+### Features
+- **Git Reminders**: Optional commit/push notifications
+- **Save Reminders**: Unsaved file alerts
+- **Button Visibility**: Customize which action buttons to show
+- **Explorer View**: Toggle pet visibility in sidebar
 
-- Type "meow" or "nya" in chat for special cat responses
-- Try "coffee" for a coffee break interaction
-- Use the dance button for sparkle effects and fun animations
-- Discover random encouraging messages as you code
-- Watch your pet's mood change naturally over time
+## 🎮 How to Play
 
-## 🔒 Privacy & Security
+### Basic Interactions
+- **Click Your Pet**: Wake them up or get attention
+- **Pat (💖)**: Show love (10s cooldown)
+- **Feed (🍎)**: Give treats (15s cooldown) 
+- **Dance (💃)**: Watch them perform (20s cooldown)
 
-- Your API key is stored securely in VS Code settings
-- Code is only sent to AI when you explicitly use AI features
-- No data collection or tracking
-- All processing happens locally or through your chosen AI provider
+### AI Chat
+- **Ask Questions**: Programming help, explanations, debugging
+- **Get Tips**: Productivity shortcuts and best practices
+- **Easter Eggs**: Try saying "meow" or mentioning "coffee"
+- **Context**: Your pet remembers recent conversations
 
-## 🛠️ Development
+### Achievements
+- **First Words**: Have your first conversation
+- **Code Helper**: Ask for coding help 5 times
+- **Night Owl**: Code past midnight
+- **Speed Typer**: Type 1000+ characters in a session
+- **Pet Lover**: Interact with your pet 100 times
+- **Level Milestones**: Reach levels 5, 10, 15, and 20
 
-### Project Structure
-\`\`\`
-tamagotchi-pets/
-├── src/
-│   └── extension.js          # Main extension logic
-├── media/
-│   ├── icon.png             # Extension icon
-│   ├── cat-*.gif            # Cat animations
-│   └── raccoon-*.gif        # Raccoon animations
-├── package.json             # Extension manifest
-├── README.md               # This file
-└── LICENSE                 # MIT license
-\`\`\`
+## 🔧 Commands
 
-### Building
-\`\`\`bash
-# Install dependencies
-npm install
+Access these via Command Palette (Ctrl+Shift+P):
 
-# Compile extension
-npm run compile
+- `Tamagotchi Pets: Show Pet Panel` - Open main view
+- `Tamagotchi Pets: Set API Key` - Configure AI access
+- `Tamagotchi Pets: Open Settings` - Full settings panel
+- `Tamagotchi Pets: Feed Pet` - Give your pet a treat
+- `Tamagotchi Pets: Pat Pet` - Show affection
+- `Tamagotchi Pets: Save All Files` - Quick save with celebration
+- `Tamagotchi Pets: Git Commit` - Easy version control
+- `Tamagotchi Pets: Show Achievements` - View progress
 
-# Package extension
-vsce package
-\`\`\`
+## 🆕 What's New in v2.1.1
 
-## 🤝 Contributing
+### Major Improvements
+- **Flexible AI Responses**: Set minimum words to 0 for unlimited responses or keep it short
+- **Enhanced AI Quality**: Improved conversation flow and more helpful, detailed responses
+- **Aesthetic Scrollbars**: Beautiful themed scrollbars that blend with your chosen theme
+- **Better Performance**: Optimized animations and reduced resource usage
 
-We welcome contributions! Here's how you can help:
+### Visual Enhancements
+- **Smoother Animations**: More fluid pet movements and transitions
+- **Better Effects**: Enhanced hearts, sparkles, and confetti animations
+- **Improved Themes**: More cohesive color schemes and better contrast
+- **Responsive Design**: Better scaling across different panel sizes
 
-1. **Report Bugs**: Open an issue with detailed reproduction steps
-2. **Suggest Features**: Share your ideas for new pet types or features
-3. **Submit PRs**: Fork the repo and submit pull requests
-4. **Share Feedback**: Let us know how we can improve the experience
+### Quality of Life
+- **Smarter Conversations**: AI remembers context better and gives more relevant responses
+- **Reduced Cooldowns**: More frequent interactions with your pet
+- **Better Error Handling**: More informative error messages and recovery
+- **Performance Optimizations**: Faster loading and smoother experience
 
-## 📝 Changelog
-
-### v2.0.0 - Major UI Overhaul
-- 🎨 Completely redesigned UI with dynamic animations
-- 💃 Added dedicated dance button with sparkle effects
-- 🍒 Renamed neon theme to "cherry" with improved styling
-- 📱 Improved text field sizing and chat readability
-- 🚀 Enhanced explorer view with bigger, more interactive pet
-- ✨ Added fun mode with random encouraging messages
-- 🎯 Better theme detection and contrast
-- 💫 Smooth transitions and hover effects throughout
-
-### v1.0.0 - Initial Release
-- 🐾 Virtual pet system with cat and raccoon types
-- 🤖 AI-powered code assistance with multiple models
-- 🎨 5 beautiful themes (auto, light, dark, neon, minimal)
-- 💼 Dual panel experience (main + explorer views)
-- ⚙️ Comprehensive settings panel
-- 🎮 Easter eggs and interactive features
-- 📊 Pet progression and leveling system
-
-## 🆘 Troubleshooting
-
-### Pet Not Responding?
-- Check that your OpenRouter API key is set correctly
-- Verify your internet connection
-- Try refreshing the extension or restarting VS Code
-
-### API Errors?
-- Ensure your API key is valid and starts with "sk-or-v1-"
-- Check if you have remaining credits on OpenRouter
-- Try switching to a different AI model
-
-### Animations Not Working?
-- The extension uses GIF files that should load automatically
-- Try refreshing the webview or restarting VS Code
-- Check the developer console for any error messages
-
-### Themes Look Wrong?
-- Try switching themes manually in settings
-- Auto theme detection works best with standard VS Code themes
-- Cherry theme is designed for dark environments
-
-## 📞 Support
+## 🤝 Support & Feedback
 
 - **Issues**: [GitHub Issues](https://github.com/hajin-dev/tamagotchi-pets/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/hajin-dev/tamagotchi-pets/discussions)
-- **Email**: ibtehaj252@gmail.com
+- **Feature Requests**: Share your ideas on GitHub
+- **Discussions**: Join the community discussions
 
-## 🙏 Acknowledgments
+## 📝 License
 
-- **OpenRouter** for providing free AI model access
-- **VS Code Team** for the amazing extension API
-- **Community** for feedback and feature suggestions
-- **Open Source** projects that inspired this extension
+MIT License - Feel free to contribute and customize!
 
 ---
 
-**Made with 💖 by Hajin for developers who believe coding should be fun!**
+**Made with 💖 for developers who want a friendly coding companion**
 
-*Transform your coding experience with a virtual pet companion. Happy coding! 🐾✨*
-
-## 🌟 What Makes This Special?
-
-This isn't just another VS Code extension - it's a companion that makes coding more enjoyable:
-
-- **Emotional Connection**: Your pet grows with you and celebrates your achievements
-- **Productivity Boost**: Gentle reminders and encouragement keep you motivated
-- **Stress Relief**: Interactive pet care provides quick mental breaks
-- **Learning Aid**: AI assistance helps you learn and solve problems
-- **Customizable**: Themes and settings adapt to your preferences
-- **Fun Factor**: Dance mode, sparkles, and easter eggs add joy to coding
-
-Join thousands of developers who've made coding more fun with their virtual pet companion! 🚀
+*Transform your coding sessions into delightful adventures with your new virtual pet! 🐾✨*
