@@ -4,4 +4,4 @@ node_modules/**
 test/**
 .gitignore
 .eslintrc.json
-**/*.vsPix
+**/*.vsix
